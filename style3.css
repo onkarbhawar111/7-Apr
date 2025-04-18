@@ -37,8 +37,42 @@ p{
 
 /* div span{
     color: red;
+} */ 
+
+/* p{
+    font-family: Comic Sans MS, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(223, 247, 7);
+    background-color: rgba(0, 0, 255, 0.5);
+    opacity: 0.1;
 } */
 
-p{
-    font-family: Comic Sans MS111111, Arial, sans-serif;
+/* img{
+    opacity: 0.9;
+} */
+
+/* div{
+    background-color: aqua;
+    background: radial-gradient(circle, blue , white);
+    background: linear-gradient(to right, red, blue);
+    height: 200px;
+} */
+
+
+/* div{
+    background-image: url('https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg');
+    background: url('https://www.shutterstock.com/shutterstock/photos/2286554497/display_1500/stock-photo-random-pictures-cute-and-funny-2286554497.jpg');
+    height: 900px;
+    width: 900px;
+    background-repeat: no-repeat;
+} */
+
+
+
+div{
+    background-color: yellow;
+    border: 2px solid black;
+    border-width: 3px 6px 9px 12px;
 }
