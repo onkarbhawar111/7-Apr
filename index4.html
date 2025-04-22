@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .wrapper {
+            position: relative;
+        }
+
+        .box1 {
+            position: relative;
+            z-index: 1;
+            border: solid;
+            height: 100px;
+            margin: 50px;        }
+
+        .box2 {
+            position: absolute;
+            z-index: 2;
+            background: pink;
+            width: 20%;
+            left: 65%;
+            top: -25px;
+            height: 120px;
+            opacity: 0.9;        }
+
+        .box3 {
+            position: absolute;
+            z-index: 3;
+            background: cyan;
+            width: 70%;
+            left: 40px;
+            top: 60px;        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The z-index Property</h1>
+
+    <div class="wrapper">
+        <div class="box1">Box 1 - has z-index: 1</div>
+        <div class="box2">Box 2 - has z-index: 2 (will be put above .box1)</div>
+        <div class="box3">Box 3 - has z-index: 3 (will be put above .box1 and .box2)</div>
+    </div>
+
+</body>
+
+</html>
