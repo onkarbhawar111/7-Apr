@@ -157,7 +157,104 @@ span{
 
 
 
-button{
+/* button{
     position: sticky;
     top: 0px;
+} */
+
+
+/* a:hover{
+    color: brown;
+    font-size: 40px;
+}
+
+button:active{
+    color: yellow;
+}
+
+button:not(:hover){
+    background-color: aqua;
+} */
+/* 
+ul li:hover{
+    background-color: yellow;
+} */
+
+/* ul li{
+    background-color: grey;
+} */
+
+/* ul li:nth-child(2n-1){
+    background-color: yellow;
+} */
+
+div{
+    height: 100px;
+    background-color: blue;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    animation-name: shrink;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes rotateX {
+    from{
+        transform: rotateX(360deg);
+    }
+}
+@keyframes rotateY {
+    from{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotate {
+    50%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes slideLeft {
+    from{
+        transform: translateX(100px);
+    }
+}
+@keyframes slideRight {
+    to{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes colorChange{
+    0%{
+        background-color: aqua;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: brown;
+    }
+    80%{
+        background-color: grey;
+    }
+    100%{
+        background-color: pink;
+    }
+}
+
+@keyframes grow {
+    50%{transform: scale(2, 2)
+    }
+}
+@keyframes shrink {
+    50%{transform: scale(0.5, 0.5)}
+}
+
+button{
+    cursor: crosshair;
 }
