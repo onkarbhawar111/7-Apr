@@ -185,12 +185,12 @@
 // let x = 8;
 // console.log(!x)      
 
-let fname = 'Onkar';
-let lname = "Bhawar"
-let fullName = `My name is ${fname} ${lname}.`
+// let fname = 'Onkar';
+// let lname = "Bhawar"
+// let fullName = `My name is ${fname} ${lname}.`
 
 // console.log(fname.length)
 // console.log(fullName.toLowerCase())
 // console.log(fname.toUpperCase())
-console.log(fname.charAt(200))
+// console.log(fname.charAt(200))
 // console.log(fullName.indexOf('nam'))
