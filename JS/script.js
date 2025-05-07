@@ -185,12 +185,158 @@
 // let x = 8;
 // console.log(!x)      
 
-// let fname = 'Onkar';
+// let fname = '     Onkar   ';
 // let lname = "Bhawar"
-// let fullName = `My name is ${fname} ${lname}.`
+// let fullName = `My name is ${fname} ${lname}. I am a Full Stack Dev`
 
 // console.log(fname.length)
 // console.log(fullName.toLowerCase())
 // console.log(fname.toUpperCase())
-// console.log(fname.charAt(200))
+// console.log(fname.charAt(2))
 // console.log(fullName.indexOf('nam'))
+// console.log(fname.slice(0,3))
+// console.log(lname.replace('Bh1','ZZ'))
+
+// let result = fullName.split('.')
+// console.log(result)
+// console.log(fname.trim())
+// console.log(fullName.includes('AAAAA'))
+
+
+
+
+// let arr = [11, 22, 33, 44, 55]
+// let arr2 = [999, 888]
+// console.log(arr.length)
+// arr.push(66)
+// console.log(arr)
+
+// console.log(arr.pop())
+// console.log(arr.shift())
+// console.log(arr)
+
+// console.log(arr.unshift(99))
+// console.log(arr.concat(arr2))
+// console.log(arr.slice(2, 5))
+// console.log(arr.splice(0, 2, 'Onkar'))
+// console.log(arr)
+
+
+
+//function declaration
+// function greet(){
+//     console.log('fn called...')
+// }
+
+// greet();
+
+//arrow fn
+// const greet = () =>{
+//     console.log('fn called...!')
+// }
+
+// greet()
+
+
+// let arr = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+// let newArr = arr.forEach((a) => {
+//     return a
+// })
+
+// let newArr = arr.map((a) => {
+//     return a    
+// })
+
+// let newArr = arr.filter((key)=>{
+//     return key%2==1
+// })
+
+// console.log(newArr)
+
+// let arr = ['Apple', 'Banana', 'Pineapple', 'Chickoo']
+
+// let res = arr.find((key) =>{
+//    return key.startsWith('A')
+// } )
+// console.log(res)
+
+// let arr = [1, 2, 3, 4]
+// let res = arr.reduce((accumulator, i)=>{
+//     return accumulator + i;
+// }, 0)
+
+//1st iteration      acc=0, i=1  acc=acc+i=0+1=1
+//2nd iteration      acc=1, i=2  acc=acc+i=1+2=3
+//3rd iteration      acc=3, i=3  acc=acc+i=3+3=6
+//4th iteration      acc=6, i=4  acc=acc+i=6+4=10
+
+// console.log(res)
+
+// console.log(arr.includes(1))
+// console.log(arr.reverse())
+// console.log(arr)
+
+// console.log('Start')
+
+// for(let i=0; i<3 ; i++){
+//     console.log(i)
+// }
+
+// console.log('End')
+
+
+// let i=0
+// while(i<3){
+//     console.log(i)
+
+//     i++;
+// }
+
+
+
+// let i=1110
+
+// do{
+// console.log(i)
+// i++;
+// }while(i<3)
+
+// let person = {
+//     fname: "Onkar",
+//     lname:'Bhawar',
+//     age:25
+// }
+
+// console.log(person)
+
+// for(let key in person){
+//     console.log(person[key])
+// }
+
+// let arr = [11, 22, 33, 44, 55]
+// for(let key of arr){
+//     console.log(key)
+// }
+
+
+// let age = 2
+
+// if(age > 18){
+//     console.log("You are allowed to vote.")
+// } else{
+//     console.log('Not Allowed...')
+// }
+
+let x = 30
+
+if(x==1){
+    console.log('x ========= 1')
+} else if(x == 2){
+    console.log('x ========= 2')    
+} else if(x == 3){
+    console.log('x ========= 3')
+} else{
+    console.log('none matched...')
+}
+
+
