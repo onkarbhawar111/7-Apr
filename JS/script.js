@@ -240,12 +240,14 @@
 
 // let arr = [11, 22, 33, 44, 55, 66, 77, 88, 99]
 // let newArr = arr.forEach((a) => {
-//     return a
+//     return console.log(a+1)
 // })
 
+
 // let newArr = arr.map((a) => {
-//     return a    
+//     return a+1    
 // })
+// console.log(newArr)
 
 // let newArr = arr.filter((key)=>{
 //     return key%2==1
@@ -327,16 +329,84 @@
 //     console.log('Not Allowed...')
 // }
 
-let x = 30
+// console.log('Start')
+// let x = 1
 
-if(x==1){
-    console.log('x ========= 1')
-} else if(x == 2){
-    console.log('x ========= 2')    
-} else if(x == 3){
-    console.log('x ========= 3')
-} else{
-    console.log('none matched...')
-}
+// if(x==1){
+//     console.log('x ========= 1')
+// } else if(x == 2){
+//     console.log('x ========= 2')    
+// } else if(x == 3){
+//     console.log('x ========= 3')
+// } else{
+//     console.log('none matched...')
+// }
+
+// console.log('End')
 
 
+// for(let i=0 ; i<5 ; i++){
+//     if(i==3){
+//         continue;
+//     }
+//     console.log(i)
+// }
+
+// console.log('End')
+
+
+// let day = 'Monday'
+
+// switch (day) {
+//     case 'Sunday':
+//         console.log('Its Sunday.')
+//         break;
+//     case 'Monday1':
+//         console.log('Its Monday.');
+//         break;
+//     default:
+//         console.log('No day matched.')
+//         break;
+// }
+
+// console.log('End')
+
+//fn declaration
+// function greet(){
+//     console.log('Good Morning...')
+// }
+
+// function add(a, b){     //a, b - parameters a=10, b=5
+
+
+
+
+
+//    console.log(a+b)
+
+
+
+// }
+
+// add(10, 5)   //10, 5 - arguements
+
+//fn expression
+// const greet = function(){
+//     console.log('Good Morning !!!')
+// }
+// greet()
+
+// let greet = () => {
+//     console.log('Good Morning ...!!!')    
+// }
+// greet()
+
+// let x = 10
+// let y = 5
+// const add = (a, b) => a+b
+
+// console.log(add(x, y))
+// let fname = "Onkar"
+// const greet = x => { console.log("Good Morning", x) }  
+
+// greet(fname)
