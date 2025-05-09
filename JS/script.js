@@ -410,3 +410,66 @@
 // const greet = x => { console.log("Good Morning", x) }  
 
 // greet(fname)
+
+
+
+// try {
+//     let x = 100
+//     console.log(x / 20)
+
+//     console.log('Hello')
+// } catch (error) {
+//     console.log('THe Error is: ', error)
+// } finally{
+//     console.log('finally exeuted....')
+// }
+
+
+
+
+// function getRectArea(width, height) {
+//     if (isNaN(width) || isNaN(height)) {
+//         throw new Error('Parameter is not a number!!!!');
+//     }
+//     return console.log("Area: ", height * width)
+// }
+// try {
+//     getRectArea('three', 5);
+// } catch (e) {
+//     console.log(e);
+// } 
+
+
+// const person = {
+//     fname: "Onkar",
+//     lname: "Bhawar",
+//     age: 27,
+//     fullName: function(){
+//         return `My name is ${this.fname} ${this.lname}`
+//     }
+// }
+
+// console.log(person.fullName())
+
+// let element = document.getElementById('d11')
+
+// console.log(element.textContent)
+
+// let ele = document.getElementsByClassName('cls1')
+
+// console.log(ele[2].textContent)
+
+// let x = document.getElementsByTagName('h2')
+// console.log(x[3].textContent)
+
+// const y = document.querySelector('#d11')
+// console.log(y.textContent)
+
+// let ele = document.querySelectorAll('.cls1, h2')
+
+// console.log(ele[3].textContent)
+
+// let ele = document.getElementsByName('n1')
+
+// console.log(ele[0].value)
+
