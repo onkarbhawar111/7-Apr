@@ -473,3 +473,52 @@
 
 // console.log(ele[0].value)
 
+// let x = document.getElementById('d12')
+// console.log(x.innerHTML)
+
+// x.textContent = "Hello World !"
+
+
+// let element = document.querySelector('img')
+
+// element.setAttribute('src', '1https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_640.jpg')
+// element.setAttribute('alt', 'New Img Desc')
+
+// console.log(element.getAttribute('src'))
+
+// let ele = document.querySelector('h1')
+
+// console.log(ele.style.color)
+
+// ele.style.backgroundColor = 'yellow'
+
+
+//background-color  --->   backgroundColor
+
+// let ele = document.querySelector('div')
+
+// let newEle = document.createElement('p')
+// newEle.textContent = "World !"
+
+// ele.append(newEle)
+// ele.prepend(newEle)
+// ele.after(newEle)
+// ele.before(newEle)
+
+// ele.remove()
+
+let ele = document.querySelectorAll('button')
+
+ele[0].onclick = () => {
+    console.log('btn 1 clicked !')
+}
+
+ele[1].ondblclick = () =>{
+    console.log('btn 2 clicked !')
+}
+
+let div = document.querySelector('div')
+
+div.onmouseover = () =>{
+    console.log('you are on div')
+}
