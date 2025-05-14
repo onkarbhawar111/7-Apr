@@ -507,18 +507,139 @@
 
 // ele.remove()
 
-let ele = document.querySelectorAll('button')
+// let ele = document.querySelectorAll('button')
 
-ele[0].onclick = () => {
-    console.log('btn 1 clicked !')
-}
+// ele[0].onclick = () => {
+//     console.log('btn 1 clicked !')
+// }
 
-ele[1].ondblclick = () =>{
-    console.log('btn 2 clicked !')
-}
+// ele[1].ondblclick = () =>{
+//     console.log('btn 2 clicked !')
+// }
 
-let div = document.querySelector('div')
+// let div = document.querySelector('div')
 
-div.onmouseover = () =>{
-    console.log('you are on div')
-}
+// div.onmouseover = () =>{
+//     console.log('you are on div')
+// }
+
+// let ele = document.getElementsByTagName('h2')
+
+// ele[0].onmouseover = (event) =>{
+//         console.log(event)
+// }
+
+// let btn = document.querySelector('button')
+
+// const evt = function(){
+//     alert('Btn 1 was clicked !!!')
+// }
+
+// const f2 = function(){
+//     console.log('hovered.....')
+// }
+// btn.addEventListener('click', evt)
+
+// btn.addEventListener('mouseover', f2)
+
+// btn.removeEventListener('click', evt)
+// btn.removeEventListener('mouseover', f2)
+
+
+
+
+
+
+
+// class Person {
+//     constructor() {
+//         console.log('ctor1 called....')
+
+//     }
+//     // constructor(fname, lname){   //fname = "Onkar"   lname = 'Bhawar'
+//     //     console.log('ctor2 called....')
+//     //     this.fname = fname;    //obj.fname = "Onkar"
+//     //     this.lname = lname;
+
+//     // }
+
+//     greet() {
+//         console.log('greet called ....')
+//     }
+
+//     greet1() {
+//         console.log('greet1 called')
+//     }
+// }
+
+// const obj = new Person('Onkar', "Bhawar")
+// console.log(obj.lname)
+// obj.greet()
+
+
+
+
+
+// class Animal{
+//     makesSound(){
+//         console.log('animal makes sound')
+//     }
+// }
+
+// class Dog extends Animal {
+//     bark(){
+//         console.log('Dog barks...')
+//     }
+//     // makesSound(){
+//     //     console.log('Dog makes sound')
+//     // }
+
+// }
+
+// const goldy = new Dog()
+// // goldy.bark()
+
+// goldy.makesSound()
+
+
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet() {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     }
+// }
+
+// class Employee extends Person {
+//     constructor(name, age, job) {
+//         super(name, age);  // Calls the parent class's constructor
+//         this.job = job;
+//     }
+//     work() {
+//         console.log(`${this.name} is working as a ${this.job}.`);
+//     }
+// }
+
+// const employee1 = new Employee('Bob', 30, 'Developer');
+// employee1.greet();  
+// employee1.work();    
+
+// class Animal {
+//   speak() {
+//     console.log('Animal speaks');
+//   }
+// }
+
+// class Dog extends Animal {
+//   speak() {
+//     super.speak();  // Calls the parent class's speak method
+//     console.log('Dog barks');
+//   }
+// }
+
+// const dog = new Dog();
+// dog.speak();
