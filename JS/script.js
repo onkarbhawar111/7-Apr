@@ -643,3 +643,207 @@
 
 // const dog = new Dog();
 // dog.speak();
+
+//ENCAPSULATION
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name; // Public property  person1.name = Alice
+//         let _age = age; // Private variable (not accessible outside)
+
+//         //getter method
+//         this.getAge = function () {
+//             return _age;
+//         };
+
+//         //setter method
+//         this.setAge = function (newAge) {
+//             if (newAge > 0) _age = newAge;
+//             else console.log("Invalid age");
+//         };
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name}`);
+//     }
+// }
+
+// const person1 = new Person("Alice", 20);
+// console.log(person1.name); 
+// console.log(person1.getAge()); // 25
+
+// person1.setAge(30);
+// console.log(person1.getAge()); // 30
+
+// person1.setAge(-5); // Invalid age
+
+
+
+
+
+//ABSTRACTION
+
+// class Car {
+//   constructor(model) {
+//     this.model = model;
+//   }
+
+//   start() {
+//     console.log("Car is starting...");
+//     this._fuelInjection(); // Private method
+//   }
+
+//   _fuelInjection() {
+//     console.log("Fuel injection process...");
+//   }
+// }
+
+// const car1 = new Car("TATA");
+// car1.start();  
+
+// car1._fuelInjection()
+
+
+
+
+
+//INHERITANCE
+
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} makes a sound`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, breed) {
+//     super(name); // Call parent constructor
+//     this.breed = breed;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} barks`);
+//   }
+// }
+
+// const dog1 = new Dog("Buddy", "Golden Retriever");
+// dog1.speak(); // Output: Buddy barks
+
+
+
+//POLYMORPHISM
+
+// class Animal {
+//   speak() {
+//     console.log("This animal makes a sound");
+//   }
+// }
+
+// class Cat extends Animal {
+//   speak() {
+//     console.log("Meow Meow!");
+//   }
+// }
+
+// class Dog extends Animal {
+//   speak() {
+//     console.log("Woof Woof!");
+//   }
+// }
+
+// const animals = [new Animal(), new Cat(), new Dog()];
+
+// animals.forEach((animal) => animal.speak());
+
+
+
+//SYNC PROG
+// console.log('Start');
+
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
+// console.log('End');
+
+
+// //ASYNC PROG
+// console.log('Start');
+
+// setTimeout(() => {
+//   console.log('Asynchronous task'); 
+// }, 2000);
+
+// console.log('End');
+
+
+
+
+
+//CALLBACKS
+
+//SYNCHRONOUS CALLBACK
+// function greet(name, callback) {
+//     console.log('Hello, ' + name);
+//     callback(); // Synchronous callback
+// }
+
+// function afterGreet() {
+//     console.log('Greeting completed.');
+// }
+
+// greet('Onkar', afterGreet);
+
+//ASYNCHRONOUS CALLBACK
+
+// function fetchData(callback) {   //callback = processData
+//   setTimeout(() => {
+//     console.log('Data fetched from server');
+//     callback(); // Asynchronous callback
+//   }, 2000);                                               // Simulates 2 seconds delay
+// }
+
+// function processData() {
+//   console.log('Processing fetched data...');
+// }
+
+// console.log('Start');
+// fetchData(processData);                                      // Asynchronous
+// console.log('End');
+
+
+
+//HOF
+
+// function greet(name) {
+//   return `Hello, ${name}!`;
+// }
+
+// function processUserInput(callback) {
+//   const userName = "John";
+//   return callback(userName); // Passing greet as the callback
+// }
+
+// console.log(processUserInput(greet)); // Output: Hello, John!
+
+
+
+
+
+
+
+// function multiplier(factor) {
+//     return function (num) {
+//         return num * factor;
+//     };
+// }
+
+// // const double = multiplier(2); // Returns a function that doubles a number
+// const triple = multiplier(3); // Returns a function that triples a number
+
+// // console.log(double(5)); // Output: 10
+// console.log(triple(5)); // Output: 15
+
