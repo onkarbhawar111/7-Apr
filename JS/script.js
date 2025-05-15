@@ -847,3 +847,105 @@
 // // console.log(double(5)); // Output: 10
 // console.log(triple(5)); // Output: 15
 
+
+
+//HOISTING 
+
+// greet()
+
+// function greet(){
+//     console.log('Good Morning')
+// }
+
+
+// const greet = () =>{
+//         console.log('Good Morning')
+
+// }
+
+
+// console.log(x)
+
+// var x = 100
+
+
+//ARRAY DESTRUCTURING
+
+// const arr = [11, 22, 33]
+
+// const [a, b, c] = arr;
+
+
+// console.log(a)
+
+//REST opr
+
+
+// function sum(...numbers){
+//    const x =  numbers.reduce((total, num)=> total + num, 5)
+//     console.log(x)
+// }
+
+// sum(1, 2, 3, 4)
+
+
+
+//SPREAD OPR
+// const arr1 = [1, 2]
+// const arr2 = [3, 4]
+// const arr3 = [...arr1, ...arr2]
+
+// console.log(arr3)
+
+
+
+
+
+//CALLBACK HELL
+// setTimeout(() => {
+//     console.log('Step 1: Prepare ingredients');
+//     setTimeout(() => {
+//         console.log('Step 2: Cook food');
+//         setTimeout(() => {
+//             console.log('Step 3: Serve food');
+//             setTimeout(() => {
+//                 console.log('Step 4: Clean dishes');
+//             }, 1000);
+//         }, 1000);
+//     }, 1000);
+// }, 1000);
+
+
+
+
+
+//PROMISES
+
+
+// let promise = new Promise(function (resolve, reject) {
+//     let isLogin = false;
+//     if (isLogin) {
+//         setTimeout(() => {
+//             resolve("You are logged in...")
+//         });
+//     } else {
+//         reject("You are not logged in. Please Login")
+//     }
+// })
+// console.log(promise)
+
+// // console.log(promise)
+// promise.then((res) => {
+//     console.log("Then called: ", res)
+
+// }).catch((err) => {
+//     console.log("catch called: ", err)
+
+// })
+
+async function getData() {
+    let result = await fetch("https://jsonplaceholder.typicode.com/posts");
+    let data = await result.json(); // Extract the JSON body
+    console.log(data);
+}
+getData();
