@@ -943,9 +943,9 @@
 
 // })
 
-async function getData() {
-    let result = await fetch("https://jsonplaceholder.typicode.com/posts");
-    let data = await result.json(); // Extract the JSON body
-    console.log(data);
-}
-getData();
+// async function getData() {
+//     let result = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     let data = await result.json(); // Extract the JSON body
+//     console.log(data);
+// }
+// getData();
